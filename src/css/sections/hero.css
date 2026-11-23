@@ -279,12 +279,11 @@
   --lamp-y: 39%;
   --lamp-w: 40%;
   --lamp-ratio: 360 / 372;
-  --face-x: 61%;
-  --face-y: 66%;
-  --face-w: 52%;
-  --face-h: 35%;
-  --face-rotate: -22deg;
-  --beam-rotate: -32deg;
+  --face-x: 59.75%;
+  --face-y: 66.45%;
+  --face-w: 60%;
+  --face-h: 29.57%;
+  --face-rotate: -31deg;
 }
 
 .lamp--2 {
@@ -292,12 +291,11 @@
   --lamp-y: 56%;
   --lamp-w: 48%;
   --lamp-ratio: 441 / 415;
-  --face-x: 20.6%;
-  --face-y: 82%;
-  --face-w: 27%;
-  --face-h: 23%;
-  --face-rotate: 25deg;
-  --beam-rotate: 28deg;
+  --face-x: 20.32%;
+  --face-y: 82.07%;
+  --face-w: 33.04%;
+  --face-h: 18.14%;
+  --face-rotate: 34.1deg;
 }
 
 .lamp--3 {
@@ -305,12 +303,11 @@
   --lamp-y: 54%;
   --lamp-w: 45%;
   --lamp-ratio: 402 / 380;
-  --face-x: 59%;
-  --face-y: 67%;
-  --face-w: 49%;
-  --face-h: 35%;
-  --face-rotate: -22deg;
-  --beam-rotate: -30deg;
+  --face-x: 60.03%;
+  --face-y: 68.17%;
+  --face-w: 58.97%;
+  --face-h: 24.03%;
+  --face-rotate: -30.2deg;
 }
 
 .lamp:focus-visible {
@@ -344,8 +341,9 @@
 .lamp__face {
   width: var(--face-w);
   height: var(--face-h);
-  background: radial-gradient(closest-side, var(--color-lamp-core) 76%, var(--color-lamp-light) 93%, var(--color-lamp-clear));
+  background: radial-gradient(closest-side, var(--color-lamp-hot) 0%, var(--color-lamp-core) 62%, var(--color-lamp-edge) 95%, var(--color-lamp-clear) 100%);
   border-radius: 50%;
+  box-shadow: 0 0 14px 3px var(--color-lamp-light);
   transform: translate(-50%, -50%) rotate(var(--face-rotate));
 }
 
@@ -353,7 +351,7 @@
   width: 260%;
   aspect-ratio: 1;
   background: radial-gradient(ellipse 26% 46% at 50% 50%, var(--color-lamp-light), var(--color-lamp-light-soft) 48%, var(--color-lamp-clear) 100%);
-  transform: translate(-50%, -50%) rotate(var(--beam-rotate)) translateY(34%);
+  transform: translate(-50%, -50%) rotate(var(--face-rotate)) translateY(34%);
 }
 
 .lamp.is-on .lamp__face,

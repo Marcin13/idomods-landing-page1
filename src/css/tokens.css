@@ -18,7 +18,9 @@
   --color-track: rgb(231 231 231 / 0.5);
   --color-shader-base: #111111;
   --color-shader-glow: #6b5413;
-  --color-lamp-core: rgb(255 246 224 / 0.96);
+  --color-lamp-hot: #fffdf5;
+  --color-lamp-core: rgb(255 246 224 / 0.98);
+  --color-lamp-edge: rgb(255 224 164 / 0.94);
   --color-lamp-light: rgb(255 214 138 / 0.62);
   --color-lamp-light-soft: rgb(255 196 104 / 0.24);
   --color-lamp-clear: rgb(255 196 104 / 0);
