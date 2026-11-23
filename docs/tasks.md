@@ -47,6 +47,8 @@ Kolejność jest kolejnością realizacji. Źródła: `N-…` i `K-…` z [figma
 - [x] **T-26** Shader WebGL bez bibliotek, oparty na szumie. Sekcja: shader. Źródło: N-06.1, N-06.5.
 - [x] **T-27** Płynna, nieskończona pętla, cykl 20–30 s. Sekcja: shader. Źródło: N-06.2, N-06.3, N-06.4.
 - [x] **T-28** Wersja zapasowa i pauza poza ekranem. Sekcja: shader. Źródło: §8.5.
+- [x] **T-44** Osobna warstwa światła z uchylanych drzwi, ze statycznym kadrem przy ograniczeniu ruchu. Sekcja: shader. Źródło: polecenie właściciela projektu, §8.5.
+- [x] **T-45** Rozmyte cienie ludzi przechodzących przed drzwiami, wyłączone przy ograniczeniu ruchu. Sekcja: shader. Źródło: polecenie właściciela projektu, §8.5.
 
 ## Stopka
 

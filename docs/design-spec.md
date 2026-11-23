@@ -134,6 +134,8 @@ Animujemy tylko `transform` i `opacity` (N-01.3). Zmiany tła robimy przez nakł
 - **Układ:** pełna szerokość, 1920 × 835 px, treść wyśrodkowana.
 - **Elementy:** „Twoje wnętrze zasługuje na wyjątkowe światło”, przycisk „Kup teraz”, „Od 119 zł na oficjalnej stronie producenta SOLLUX”. W Figmie ten tekst jest częścią obrazu, więc rozmiary są przybliżone.
 - **Animacja:** WebGL w czasie rzeczywistym, nieskończona pętla bez cięć, cykl 20–30 s, ruch falujący, czerń i żółć. Tekst i przycisk są statyczne, nad animacją (N-06.1 do N-06.6).
+- **Światło z drzwi:** osobna warstwa `src/js/door-light.js` nad shaderem. Smuga rozszerza się i zwęża powoli, w nieregularnym tempie, z miękkim półcieniem. Przy ograniczeniu ruchu pokazuje statyczny kadr z lekko uchylonymi drzwiami.
+- **Cienie ludzi:** `src/js/door-people.js` dodaje rozmyte sylwetki, które zasłaniają część smugi. Mają różne tempo i nieregularne odstępy, czasem idą we dwoje i krótko przystają. Przy ograniczeniu ruchu są wyłączone.
 - **Stany:** przycisk na hover **(propozycja)**: rozjaśnienie przez nakładkę, 200 ms.
 - **Telefon (propozycja):** wysokość ok. 560 px, tytuł 32 px, niższa rozdzielczość renderowania.
 - **Wersja zapasowa (propozycja):** statyczny gradient, gdy nie ma WebGL lub włączono ograniczenie ruchu.
