@@ -1,0 +1,127 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: var(--space-8);
+  left: var(--space-8);
+  z-index: var(--z-skip);
+  padding: var(--space-12) var(--space-24);
+  font-weight: var(--font-bold);
+  color: var(--color-white);
+  background: var(--color-ink);
+  border-radius: var(--radius-pill);
+  transform: translateY(-200%);
+  transition: transform var(--duration-hover) var(--ease-standard);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--color-white);
+}
+
+.icon {
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.icon--16 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon--20 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon--32 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.button {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.1875rem;
+  padding: var(--space-16) var(--space-24);
+  overflow: hidden;
+  font-size: var(--text-16);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-normal);
+  text-align: center;
+  border-radius: var(--radius-pill);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity var(--duration-button) var(--ease-standard);
+}
+
+.button--accent {
+  color: var(--color-text);
+  background: var(--color-accent);
+}
+
+.button--accent::before {
+  background: var(--color-accent-hover);
+}
+
+.button--dark {
+  color: var(--color-white);
+  background: var(--color-ink);
+}
+
+.button--dark::before {
+  background: var(--color-button-hover);
+}
+
+.button:focus-visible::before {
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .button:hover::before {
+    opacity: 1;
+  }
+}
+
+.circle-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--control-size);
+  height: var(--control-size);
+  border-radius: var(--radius-pill);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link,
+  .button::before {
+    transition: none;
+  }
+}
