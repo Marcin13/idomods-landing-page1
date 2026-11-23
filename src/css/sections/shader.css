@@ -1,0 +1,78 @@
+.shader-section {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35rem;
+  overflow: hidden;
+  color: var(--color-white);
+  background:
+    radial-gradient(70% 90% at 78% 100%, var(--color-accent), var(--color-shader-glow) 42%, var(--color-shader-base) 78%),
+    var(--color-shader-base);
+}
+
+.shader-section__canvas {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity var(--duration-zoom) var(--ease-standard);
+}
+
+.shader-section__canvas.is-ready {
+  opacity: 1;
+}
+
+.shader-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-24);
+  max-width: 45rem;
+  text-align: center;
+}
+
+.shader-section__title {
+  font-size: var(--text-32);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-snug);
+}
+
+.shader-section__note {
+  max-width: 15rem;
+  font-size: var(--text-16);
+  line-height: var(--leading-normal);
+}
+
+.shader-section .button:focus-visible {
+  outline-color: var(--color-white);
+  box-shadow: 0 0 0 2px var(--color-ink);
+}
+
+@media (min-width: 768px) {
+  .shader-section {
+    min-height: 40rem;
+  }
+
+  .shader-section__title {
+    font-size: var(--text-56);
+    line-height: var(--leading-tight);
+  }
+}
+
+@media (min-width: 1200px) {
+  .shader-section {
+    min-height: 0;
+    height: min(43.49vw, 52.1875rem);
+    min-height: 35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shader-section__canvas {
+    transition: none;
+  }
+}
