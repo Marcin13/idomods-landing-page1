@@ -26,6 +26,21 @@
   opacity: 1;
 }
 
+.shader-section__door {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-zoom) var(--ease-standard);
+}
+
+.shader-section__door.is-ready {
+  opacity: 1;
+}
+
 .shader-section__content {
   display: flex;
   flex-direction: column;
@@ -72,7 +87,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .shader-section__canvas {
+  .shader-section__canvas,
+  .shader-section__door {
     transition: none;
   }
 }
