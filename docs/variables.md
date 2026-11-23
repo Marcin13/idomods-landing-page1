@@ -1,6 +1,6 @@
 # Zmienne projektu
 
-Jedyne źródło tych wartości. W innych plikach używaj nazw zmiennych i odsyłaj tutaj.
+Jedyne źródło tych wartości. W innych plikach używaj nazw zmiennych i odsyłaj tutaj. Wyjątek: `README.md` pokazuje te wartości czytelnikom i musi być z nimi zgodny.
 
 | Nazwa | Wartość | Opis |
 | --- | --- | --- |

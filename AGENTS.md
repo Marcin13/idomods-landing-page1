@@ -2,6 +2,7 @@
 
 > **Stałe projektu są w [docs/variables.md](docs/variables.md). Każdy agent czyta ten plik na starcie.**
 > W pozostałych plikach używaj nazw zmiennych (np. `STRONA`) i nie przepisuj wartości.
+> Jedyny wyjątek to `README.md`, który pokazuje wartości czytelnikom. Muszą one być zgodne z `docs/variables.md`.
 
 ## Kontekst
 
