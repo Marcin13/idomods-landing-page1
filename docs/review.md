@@ -9,10 +9,10 @@ Przegląd lokalnego katalogu: 23.11.2026. W katalogu nie ma jeszcze kodu strony.
   - **Polecenie dla Claude'a:** zaimplementuj stronę zgodnie z `FIGMA` w czystym HTML, CSS i JavaScript, tak aby działała po bezpośrednim otwarciu `src/index.html`; zachowaj zasady dotyczące dostępności, responsywności, tokenów i plików sekcji z `AGENTS.md`.
   - **Zmiana:** Zbudowałem całą stronę w `src/` z tokenami, osobnym CSS dla każdej sekcji i działaniem po otwarciu pliku bez serwera.
 
-- [ ] `.github/workflows/`
+- [x] `.github/workflows/`
   - **Problem:** brak workflow GitHub Actions publikującego stronę na GitHub Pages, wymaganego przez `AGENTS.md`.
   - **Polecenie dla Claude'a:** dodaj workflow publikujący gotową zawartość `src/` na GitHub Pages pod adresem `STRONA` i sprawdź poprawność wdrożenia.
-  - **Częściowo wykonane:** Dodałem `.github/workflows/deploy.yml`, ale punkt pozostaje otwarty, bo wdrożenia nie można sprawdzić przed wysłaniem kodu na GitHuba.
+  - **Zmiana:** Dodałem `.github/workflows/deploy.yml`, a wdrożenie zakończyło się sukcesem i strona działa pod adresem `STRONA`.
 
 ## P2 — ważne
 

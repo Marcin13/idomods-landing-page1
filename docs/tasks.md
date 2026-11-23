@@ -10,7 +10,7 @@ Kolejność jest kolejnością realizacji. Źródła: `N-…` i `K-…` z [figma
 - [x] **T-04** Reset i style bazowe. Sekcja: strona. Źródło: AGENTS.
 - [x] **T-05** Układ strony: kontener 1600 px, marginesy, breakpointy. Sekcja: strona. Źródło: §6.
 - [x] **T-06** Wspólne przyciski i linki z animacją tylko `transform` i `opacity`. Sekcja: strona. Źródło: N-01.1, N-01.2, N-01.3.
-- [ ] **T-07** Workflow GitHub Actions publikujący `src/` na GitHub Pages pod `STRONA`. Sekcja: projekt. Źródło: AGENTS, `docs/review.md`. Workflow jest dodany, ale nie został jeszcze uruchomiony, bo kod nie trafił na GitHuba.
+- [x] **T-07** Workflow GitHub Actions publikujący `src/` na GitHub Pages pod `STRONA`. Sekcja: projekt. Źródło: AGENTS, `docs/review.md`.
 - [x] **T-08** `README.md` z instrukcją uruchomienia. Sekcja: projekt. Źródło: AGENTS.
 
 ## Nagłówek
